@@ -1,0 +1,31 @@
+--- ✄ --------- 2026.04.08 13:44 -------------------
+-Data_Structure is a massive field with lots of references, we're not going to be taking all of it in but only the necessary
+part that will aid us in our embedded journey.
+Things such as @Buffers made by a code you write and can be re-used for communication protocols like UART,I2C,CAN
+
+
+The purpose of Data Structures is to basically:
+• store data and create an algorithm that does specific calculations or operations such as: send to UART
+• This Data could be sensor readings or orders you're trying to write to another MCU or an actuator.
+
+
+Types of data structures that are used in embedded:
+• LIFO (Last in first out ) buffer also known as (stack)
+• FIFO (First in first out) there's circular and non-circular type and is also known as (Queue)
+• Linked_Lists which can be single, doubly and circular.
+
+
+-Comapnies measure the effectiveness of data structures based on the time taken to transfer data using LIFO for example.
+-For how to write a code for LIFO check out @lifo.h and @lifo.c and read comments.
+
+
+Circular Buffer and FIFO:
+• Buffers are a means for first in information to be first out and is used in most embedded programs.
+• for example if we wanted to make an application that prints to the screen a paragraph through a MCU:
+    1. We'd first have to not the paragraph a character by character in FIFO.
+    2. Add an interrupt serviece routine in UART to indicate that transmitting is complete.
+    3. once this interrupt is called we'll get data from FIFO.
+• Circular buffers add data to head and remove data from tail.
+• when boundary is reached and space has been freed up in the tail, the head wraps around starting from the beginning.
+• that's why it's called circular because they wrap around each other.
+• 
