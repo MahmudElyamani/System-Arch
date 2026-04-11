@@ -28,4 +28,6 @@ Circular Buffer and FIFO:
 • Circular buffers add data to head and remove data from tail.
 • when boundary is reached and space has been freed up in the tail, the head wraps around starting from the beginning.
 • that's why it's called circular because they wrap around each other.
-• 
+-For how to write a code for @Circular_Buffer and FIFO check out @fifo.h and @fifo.c and read comments.
+
+

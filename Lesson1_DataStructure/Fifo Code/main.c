@@ -2,10 +2,10 @@
 //Created by Eng. Mahmoud Elyamani
 
 #include "fifo.h"
-void main()
+int main()
 {
     element_type uart_buffer[5];
-    element_type i, temp;
+    element_type i, temp = 0;
     FIFO_Buf_t FIFO_UART;
 
     //Initialization check for FIFO:
@@ -23,12 +23,14 @@ void main()
     }
 
     //Printing the values inside the given FIFO:
-    //We dequeued twice for some reason.. ask Keroles.
+    //We dequeued twice for some reason.. ask Keroles.          
     FIFO_print(&FIFO_UART);
     if (FIFO_dequeue(&FIFO_UART, &temp) == FIFO_no_error)
-    printf("\t Fifo dequeue (%x) ---Done---\n",temp);
+    printf("Fifo dequeue (%x) ---Done---\n",temp);
     if (FIFO_dequeue(&FIFO_UART, &temp) == FIFO_no_error)
-    printf("\t Fifo dequeue (%x) ---Done---\n",temp);
+    printf("Fifo dequeue (%x) ---Done---\n",temp);
     FIFO_print(&FIFO_UART);
 
+    return 0;
 }
+
