@@ -101,6 +101,7 @@ int delete_student()
                 return 1;
             }
             pPreviousStudent = pSelectedStudent;
+            pSelectedStudent = pSelectedStudent->pNextStudent;
         }
     }
     //if the input value exceeds the number of nodes in the list, prints out an error message:
