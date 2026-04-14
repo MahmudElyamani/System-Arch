@@ -59,9 +59,9 @@ iii. Circular: Last element contains link of the first element and first element
 --- ✄ --------- 2026.04.11 14:28 -------------------
 Assignment:
 1. Write a @GetNth() function that takes a lninked list and an integer index and returns the data value stored in
-   the node at that index position, add this function alongside the linked lists code and all of it should function.
-2. Write a function to count the number of nodes in a given singly linked list in both iterative and recursive solutions.
-3. Write a function to get the n'th node from the end
-4. Find the middle of a given linked list, if the list is even take the 2nd middle element.
-5. Function to reverse a given linked list 
+   the node at that index position, add this function alongside the linked lists code and all of it should function.        (done)
+2. Write a function to count the number of nodes in a given singly linked list in both iterative and recursive solutions.   (done)
+3. Write a function to get the n'th node from the end                                                                       (done)
+4. Find the middle of a given linked list, if the list is even take the 2nd middle element.                                 (done)
+5. Function to reverse a given linked list                                                                                  (fail)
 -check the video from (4:13:00) for more detail.
