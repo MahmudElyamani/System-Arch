@@ -1,0 +1,12 @@
+--- ✄ --------- 2026.04.14 14:53 -------------------
+-This lecture is about the principle of designing for a massive system archeticture in an organized and clean manner.
+-Every team does this on a different scale, there are seperate teams of engineers whose roles are to clean code.
+-we must lay out the idea on flowchart blocks first before we write a C code, not just for yourself but for the customer thats
+ buying the code from you.
+ you must lay out your ideas clearly so that there's no misunderstanding later on if the code isn't exactly like expected.
+-For time-ordered operation such as figuring out the key compination to a key lock, the best diagram that could describe it
+ is state machines.
+Moore vs Meaky state machines:
+• A moore machine performs actions when entering a state, for example a led would turn on when its time comes.
+• A mealy machine performs actions when transitioning from a state, for example a led wouldn't turn on unless its time comes and a button is pressed.
+
