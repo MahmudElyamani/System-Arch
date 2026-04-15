@@ -10,3 +10,12 @@ Moore vs Meaky state machines:
 • A moore machine performs actions when entering a state, for example a led would turn on when its time comes.
 • A mealy machine performs actions when transitioning from a state, for example a led wouldn't turn on unless its time comes and a button is pressed.
 
+TTool is a free open-source software that helps you design a project plan
+(it seems very old and outdated so I'd prefer if you looked at some better flowchart software)
+
+A MCU system consists of basic layers, for example:
+• The MCU communicates with the I2C that's tied to the ultrasonic sensor
+• It also can have a timer that produces pwm signal to drive a motor.
+• each of these signals is passed on through a driver for each, DC motor and ultrasonic sensor.
+• above them is whats called Algorithm which contains the states
+• this is called HAL (hardware abstraction layer)
