@@ -50,4 +50,4 @@ Regarding checking rules with MISRA:
 • If you want a permenant checker without having to pay for the software's fees download Cppcheck from github, or through the
 -  course's google drive directory. Look the video from (4:00:00) for installation guide and how to use.
 
-
+--- ✄ --------- 2026.04.16 16:28 -------------------
